@@ -1,0 +1,36 @@
+// Capicua.cpp : Defines the entry point for the console application.
+// Dado un número entero, comprobar si el número es capicúa, es decir, si leídos de la izquierda a la derecha y viceversa dan el mismo valor o número.  Ej. 34543
+// capicua.cpp : Defines the entry point for the console application.
+
+
+#include "stdafx.h"
+#include "conio.h"
+#include <iostream>
+
+using namespace std;
+
+void main()
+{int N,Z=1,c,r,i;
+cout <<"Ingrese un numero: "<< endl;
+cin >>N;
+
+i=N;
+
+while(i>0)
+{r=i%10;
+
+ Z=Z*10+r;
+
+ i=i/10;
+
+ }
+
+if(Z==N)
+  cout<<"Es capicua"<< endl;
+
+ else
+  cout <<"No es capicua"<<endl;
+
+ _getch();
+
+}
