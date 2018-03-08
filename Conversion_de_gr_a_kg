@@ -2,10 +2,10 @@
 
 class conversion
 {
-private: 
-	float Cantidad;
+  private: 
+	  float Cantidad;
 
-public:
+   public:
 	conversion(void);
 	~conversion(void);
 	float calcularconversion(float N);
@@ -16,11 +16,9 @@ cpp
 #include "conversion.h"
 #include "conio.h"
 
-
 conversion::conversion(void)
 {
 }
-
 
 conversion::~conversion(void)
 {
@@ -38,16 +36,14 @@ float conversion::calcularconversion(float N)
 #include "conversion.h"
 #include "conio.h"
 #include <iostream>
-
 using namespace std;
 
 void main()
 { conversion conversion1;
   float X;
-     cout<<"Ingrese la cantidada en gramos: ";
-   cin>>X;
-      cout<<"la cantidada en kg es: " ;
-   cout<< conversion1.calcularconversion(X)<<endl;
- 
- getch();
- }
+  cout<<"Ingrese la cantidada en gramos: ";
+  cin>>X;
+  cout<<"la cantidada en kg es: " ;
+  cout<< conversion1.calcularconversion(X)<<endl;
+  getch();
+}
