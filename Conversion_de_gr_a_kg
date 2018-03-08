@@ -1,0 +1,53 @@
+#pragma once
+
+class conversion
+{
+private: 
+	float Cantidad;
+
+public:
+	conversion(void);
+	~conversion(void);
+	float calcularconversion(float N);
+
+};
+cpp
+#include "StdAfx.h"
+#include "conversion.h"
+#include "conio.h"
+
+
+conversion::conversion(void)
+{
+}
+
+
+conversion::~conversion(void)
+{
+}
+
+float conversion::calcularconversion(float N)
+{
+	int conversion;
+	conversion=N*0.001;
+	return conversion;
+
+}
+//ejemploN3cpp
+#include "stdafx.h"
+#include "conversion.h"
+#include "conio.h"
+#include <iostream>
+
+using namespace std;
+
+void main()
+{ conversion conversion1;
+  float X;
+     cout<<"Ingrese la cantidada en gramos: ";
+   cin>>X;
+      cout<<"la cantidada en kg es: " ;
+   cout<< conversion1.calcularconversion(X)<<endl;
+ 
+ getch();
+ }
